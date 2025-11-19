@@ -15,7 +15,7 @@ html {
 }
 
 section {
-    scroll-margin-top: 58px;
+    scroll-margin-top: 106px;
 }
 
 body, p, h1, h2, h3, h4 {
@@ -273,12 +273,8 @@ h3.card-title, h2.card-title { font-size: 20px; }
   .carousel-item { color: black; }
 
   .navbar-toggler {
-    background: transparent;
+    background: white;
     border: 2px solid var(--primary-color) !important;
-
-    .navbar-toggler-icon {
-      filter: invert(22%) sepia(90%) saturate(3293%) hue-rotate(213deg) brightness(89%) contrast(91%);
-    }
 
     &:focus,
     &:hover {
@@ -294,7 +290,19 @@ h3.card-title, h2.card-title { font-size: 20px; }
 
 /* Header */
 #header-wrap { background-color: var(--secondary-color); padding: .2rem; }
-.nav-item .leftside-nav-link { &:is(:hover, :focus) { color: var(--secondary-color); } }
+.nav-item .leftside-nav-link { 
+  &:is(:hover, :focus) { color: var(--secondary-color); }
+  .icon {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 6px;
+    i { 
+      max-height: 29px;
+      margin-bottom: 0;
+    }
+  }
+}
 
 /* Sidebar */
 .sidebar { padding: 0; }
@@ -378,6 +386,7 @@ h3.card-title, h2.card-title { font-size: 20px; }
 @media screen and (max-width: 1440px) { #about .about-item { padding: 10px; } }
 
 @media screen and (max-width: 991px) {
+  section { scroll-margin-top: 68px; }
   .navbar-brand { background: var(--secondary-color); padding: 0 !important; }
   .audlog { max-width: 130px; }
   .carousel .carousel-item p { font-size: .8rem; }
@@ -408,4 +417,5 @@ h3.card-title, h2.card-title { font-size: 20px; }
 
 @media screen and (max-width: 1081px) {
     #recap .recapposition { padding: 40px !important; }
+    .sidebar { top: 58px }
 }

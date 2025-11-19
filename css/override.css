@@ -15,7 +15,7 @@ html {
 }
 
 section {
-  scroll-margin-top: 58px;
+  scroll-margin-top: 106px;
 }
 
 body, p, h1, h2, h3, h4 {
@@ -285,11 +285,8 @@ h3.card-title, h2.card-title {
   color: black;
 }
 .navbar .navbar-toggler {
-  background: transparent;
+  background: white;
   border: 2px solid var(--primary-color) !important;
-}
-.navbar .navbar-toggler .navbar-toggler-icon {
-  filter: invert(22%) sepia(90%) saturate(3293%) hue-rotate(213deg) brightness(89%) contrast(91%);
 }
 .navbar .navbar-toggler:focus, .navbar .navbar-toggler:hover {
   border-color: var(--secondary-color);
@@ -307,6 +304,16 @@ h3.card-title, h2.card-title {
 
 .nav-item .leftside-nav-link:is(:hover, :focus) {
   color: var(--secondary-color);
+}
+.nav-item .leftside-nav-link .icon {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+.nav-item .leftside-nav-link .icon i {
+  max-height: 29px;
+  margin-bottom: 0;
 }
 
 /* Sidebar */
@@ -421,6 +428,9 @@ h3.card-title, h2.card-title {
   }
 }
 @media screen and (max-width: 991px) {
+  section {
+    scroll-margin-top: 68px;
+  }
   .navbar-brand {
     background: var(--secondary-color);
     padding: 0 !important;
@@ -461,5 +471,8 @@ h3.card-title, h2.card-title {
 @media screen and (max-width: 1081px) {
   #recap .recapposition {
     padding: 40px !important;
+  }
+  .sidebar {
+    top: 58px;
   }
 }
