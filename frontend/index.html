@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head runat="server">
+    <title>Summer Camp | American University in Dubai (AUD)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Summer Camp | American University in Dubai (AUD)">
+    <!-- <meta http-equiv="Content-Security-Policy" content="require-trusted-types-for 'script'; trusted-types default;"> -->
+    <meta name="description" content="Unlock Your Potential This Summer. Join us for a transformative summer of innovative workshops and exciting outings in the heart of Dubai! Your pathway to academic success starts at AUD.">
+    <meta name="keywords" content="AUD Summer Camp,Summer Camp,Dubai Summer Camp,Grade 11 summer camp,Grade 12 summer camp,year 11 summer camp,year 12 summer camp,summer camp in dubai,summer camp in UAE,AUD,American University in Dubai">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/line-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/intlTelInput.css">
+    <link rel="shortcut icon" type="image/png" href="https://aud.edu/media/1461/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css'>
+    <link rel="stylesheet" type="text/css" href="css/variables.css">
+    <link rel="stylesheet" type="text/css" href="css/main.min.css?v=15">
+    <link rel="stylesheet" type="text/css" href="css/override.css">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#sidebarMenu">
+    <form id="form1" runat="server">
+      <div class="row">
+        <div class="sticky-top">
+          <header id="header-wrap" class="navbar d-flex p-1 shadow">
+            <div class="d-flex d-lg-none align-items-center justify-content-between w-100 p-1">
+              <a class="navbar-brand me-0 d-lg-none" href="/">
+                <img class="audlog" src="img/AUD-logo-Get-Life-Ready.png" alt="AUD logo">
+              </a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div id="carouselHeader" class="carousel slide col-12 d-none d-lg-block" data-bs-ride="carousel" aria-live="polite">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="7000" data-mdb-animation="slide-up">
+                  <p>The AUD campus hosts over 30 student clubs and numerous annual events.</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000" data-mdb-animation="slide-up">
+                  <p>The university's student-to-faculty ratio is 15:1.</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000" data-mdb-animation="slide-up">
+                  <p>AUD offers exchange programs in the USA, Canada, Europe, and Asia.</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000" data-mdb-animation="slide-up">
+                  <p>93% of AUD's students are immediately placed in the job market upon graduation.</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000" data-mdb-animation="slide-up">
+                  <p>AUD's student body includes more than 105 nationalities.</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000" data-mdb-animation="slide-up">
+                  <p>The university offers over 15 undergraduate and graduate programs.</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000" data-mdb-animation="slide-up">
+                  <p>An academic advisor accompanies each student from the day they join until graduation.</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000" data-mdb-animation="slide-up">
+                  <p>Local, regional, and international employers highly seek AUD graduates.</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000" data-mdb-animation="slide-up">
+                  <p>AUD is the first American-accredited university in the GCC.</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000" data-mdb-animation="slide-up">
+                  <p>AUD Health Center offers services 24/7.</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000" data-mdb-animation="slide-up">
+                  <p>AUD's Athletic Division provides a developed program to complement the AUD academic experience.</p>
+                </div>
+              </div>
+            </div>
+          </header>
+          <nav id="sidebarMenu" class="d-lg-block sidebar collapse shadow px-lg-2">
+            <div class="d-flex flex-column-reverse flex-lg-row align-items-center justify-content-between">
+              <a class="navbar-brand me-0 d-none d-lg-block" href="/">
+                <img class="audlog" src="img/AUD-logo-Get-Life-Ready.png" alt="AUD logo">
+              </a>
+              <ul class="nav flex-column flex-lg-row align-items-center justify-content-center">
+                <li class="nav-item mr-lg-2">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="/">
+                      <span class="icon">
+                        <i class="lni lni-home" aria-hidden="true"></i>
+                      </span>
+                      <span class="heading">HOME</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="#about">
+                      <span class="icon">
+                        <i class="bi bi-info-circle"></i>
+                      </span>
+                      <span class="heading">About</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="#typicalday">
+                      <span class="icon">
+                        <i class="lni lni-calendar" aria-hidden="true"></i>
+                      </span>
+                      <span class="heading">Schedule</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="#tracks">
+                      <span class="icon">
+                        <i class="lni lni-library" aria-hidden="true"></i>
+                      </span>
+                      <span class="heading">Tracks</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="#intro">
+                      <span class="icon">
+                        <i class="bi bi-cursor"></i>
+                      </span>
+                      <span class="heading">Apply Now </span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="#recap">
+                      <span class="icon">
+                        <i class="lni lni-spinner-arrow" aria-hidden="true"></i>
+                      </span>
+                      <span class="heading">2025 Recap</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="#recap">
+                      <span class="icon">
+                        <i class="lni lni-popup" aria-hidden="true"></i>
+                      </span>
+                      <span class="heading">Testimonials</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="#faq">
+                      <span class="icon">
+                        <i class="lni lni-question-circle" aria-hidden="true"></i>
+                      </span>
+                      <span class="heading">FAQ <span style="text-transform:lowercase">s</span>
+                      </span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="#contact">
+                      <span class="icon">
+                        <i class="lni lni-phone" aria-hidden="true"></i>
+                      </span>
+                      <span class="heading">Get in Touch</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+              <a href="https://summercamp.aud.edu/enroll/" class="btn btn-secondary float-end" style="margin:2px 15px; padding:10px 16px">Login</a>
+            </div>
+          </nav>
+        </div>
+        <div class="offcanvas offcanvas-start " style="background:var(--primary-color); padding:0px; max-width:250px" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header">
+            <p>&nbsp;</p>
+            <button type="button" class="btn-close text-reset btn-close-white " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="position-sticky pt-3">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="/">
+                      <span class="icon">
+                        <i class="lni lni-home" aria-hidden="true"></i>
+                      </span>
+                      <span class="heading">HOME</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="#about">
+                      <span class="icon">
+                        <i class="bi bi-info-circle"></i>
+                      </span>
+                      <span class="heading">About</span>
+                      <span class="subheading">Summer Camp</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="#typicalday">
+                      <span class="icon">
+                        <i class="lni lni-calendar" aria-hidden="true"></i>
+                      </span>
+                      <span class="heading">Schedule</span>
+                      <span class="subheading">Typical Day </span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="#tracks">
+                      <span class="icon">
+                        <i class="lni lni-library" aria-hidden="true"></i>
+                      </span>
+                      <span class="heading">Tracks</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="#intro">
+                      <span class="icon">
+                        <i class="bi bi-cursor"></i>
+                      </span>
+                      <span class="heading">Apply Now </span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="#recap">
+                      <span class="icon">
+                        <i class="lni lni-spinner-arrow" aria-hidden="true"></i>
+                      </span>
+                      <span class="heading">Recap</span>
+                      <span class="subheading">2025 Camp</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="#recap">
+                      <span class="icon">
+                        <i class="lni lni-popup" aria-hidden="true"></i>
+                      </span>
+                      <span class="heading">Testimonials</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="#faq">
+                      <span class="icon">
+                        <i class="lni lni-question-circle" aria-hidden="true"></i>
+                      </span>
+                      <span class="heading">FAQ <span style="text-transform:lowercase">s</span>
+                      </span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="text-center leftside-nav">
+                    <a class="leftside-nav-link" href="#contact">
+                      <span class="icon">
+                        <i class="lni lni-phone" aria-hidden="true"></i>
+                      </span>
+                      <span class="heading">Get in Touch</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <main class="ms-sm-auto col-12 sc-main">
+          <div data-bs-spy="scroll" data-bs-target="#sidebarMenu" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+            <div class="col-12">
+              <div id="main-slide" class="carousel slide" data-ride="carousel" aria-live="polite">
+                <div class="carousel-inner">
+                  <div class="carousel-item active blkBG">
+                    <video class="d-block w-100" autoplay loop muted playsinline>
+                      <source src="videos/Summer_Camp_2024_Recap720p30.mp4" type="video/mp4" />
+                    </video>
+                    <div class="w-100 h-100 position-absolute top-0 start-0 d-flex align-items-center justify-content-center">
+                      <div class="carousel-caption d-md-block">
+                        <img src="img/AUDsummercamp-Logo.png" class="img-fluid mb-2 mb-xl-0" alt="AUD Summer Camp logo" />
+                        <h1 class="sr-only">AUD Summer Camp</h1>
+                        <p class="mb-0 mb-xl-4">July 5-12, 2026</p>
+                        <div id="clock" class="time-count"></div>
+                        <p class="launchtext mt-0 mt-xl-1">until your best summer!</p>
+                        <a class="btn btn-primary text-center btnapplynow" data-bs-toggle="modal" data-bs-target="#myRegistrationform" href="#">Apply Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Intro Section Start -->
+            <section id="intro">
+              <div class="container-fluid p-5">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-12 mb-5">
+                    <div class="text-center welcome">
+                      <p>AUD Summer Camp is where learning meets fun. From hands-on classes and creative workshops to thrilling outings around Dubai, you'll experience academic innovation and personal growth like never before. With the perfect blend of on-campus fun and off-campus adventures, this is a summer designed to help you learn, grow, and thrive.</p>
+                      <p>Make this your best summer ever, join us at AUD!</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-xl-8">
+                    <div class="card p-3">
+                      <div class="row mb-3">
+                        <div class="col-12 col-xl-6 mb-3 mb-xl-0">
+                          <h2 class="card-title text-purple text-center">Early Bird Registration: <span class="h4 text-orange">5,000 AED</span>
+                          </h2>
+                          <p class="card-text text-center">Before April 10, 2026</p>
+                        </div>
+                        <div class="col-12 col-xl-6 mb-3 mb-lx-0">
+                          <h2 class="card-title text-purple text-center">Regular Registration: <span class="h4 text-orange">6,000 AED</span>
+                          </h2>
+                          <p class="card-text text-center">Before May 29, 2026</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                          <a class="btn btn-primary text-center btnapplynow" data-bs-toggle="modal" data-bs-target="#myRegistrationform" href="#">Apply Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Intro Section End -->
+            <!-- about Section Start -->
+            <section id="about" class="about">
+              <div class="container-fluid">
+                <div class="shadow row position-relative d-flex justify-content-center align-items-start align-items-stretch">
+                  <div class="col-12 col-md-6 about-middle">&nbsp;</div>
+                  <div class="col-12 col-md-6 shadow">
+                    <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                      <div class="about-item">
+                        <div class="icon">
+                          <i class="lni-users" aria-hidden="true"></i>
+                        </div>
+                        <div class="about-content">
+                          <h3>Who</h3>
+                          <p class="subheadings">can join?</p>
+                          <p class="textsize16">Students currently in Grades 10-11/Years 11-12</p>
+                        </div>
+                      </div>
+                      <div class="about-item">
+                        <div class="icon">
+                          <i class="lni-calendar" aria-hidden="true"></i>
+                        </div>
+                        <div class="about-content">
+                          <h3>When</h3>
+                          <p class="subheadings">is it happening?</p>
+                          <p class="textsize16">July 5 - 12 2026</p>
+                        </div>
+                      </div>
+                      <div class="about-item">
+                        <div class="icon">
+                          <i class="lni-map" aria-hidden="true"></i>
+                        </div>
+                        <div class="about-content">
+                          <h3>Where</h3>
+                          <p class="subheadings">is it happening?</p>
+                          <p class="textsize16">On campus (modules and accommodation) and off-campus (excursions)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-xl-3 col-sm-5 about-wrapper welcome no-padding align-items-center"></div>
+                </div>
+              </div>
+            </section>
+            <!-- about Section End -->
+            <!-- track Section Start -->
+            <section id="tracks" class="track-section">
+              <div class="container-fluid p-4 mb-4 mb-sm-0">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="heading-count pb-4">
+                      <h2 class="text-center">Choose Your Track</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-3">
+                  <!-- Card 1 -->
+                  <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="flip-card-wrapper card" tabindex="0" aria-label="Empowered Leadership track. Click to view details.">
+                      <div class="flip-card-inner">
+                        <!-- Front -->
+                        <div class="flip-card-front">
+                          <img class="card-img-top" src="../frontend/img/empowered.png" alt="Empowered leadership track logo">
+                          <div class="card-body">
+                            <h3 class="card-title">Empowered Leadership</h3>
+                            <p class="card-text">Shaping an Influential Journey</p>
+                          </div>
+                        </div>
+                        <!-- Back -->
+                        <div class="flip-card-back p-4 d-flex align-items-center">
+                          <div>
+                            <p class="mb-2"> Immerse yourself in hands-on workshops and interactive activities that explore the core of effective leadership. Build key skills in decision-making, communication, persuasion, and goal-setting in a lively on-campus setting. </p>
+                            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#LeadershipModal">Learn more</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="flip-card-wrapper card" tabindex="0" aria-label="Tech Pioneers track. Click to view details.">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img class="card-img-top" src="../frontend/img/tech-pioneers.png" alt="Tech pioneers logo">
+                          <div class="card-body">
+                            <h3 class="card-title">Tech Pioneers</h3>
+                            <p class="card-text">Unleasing Adventures in AI, Game Design, Robotics, and VR</p>
+                          </div>
+                        </div>
+                        <div class="flip-card-back p-4 d-flex align-items-center">
+                          <div>
+                            <p class="mb-2"> Blend robotics, AI, game design, and VR. Learn to program robots, test skills in VR games, explore game design principles, and create your own concepts. </p>
+                            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#TechPioneersModal">Learn more</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 3 -->
+                  <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="flip-card-wrapper card" tabindex="0" aria-label="Master the Power of Media track. Click to view details.">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img class="card-img-top" src="../frontend/img/psychology.png" alt="Master the Power of Media track logo">
+                          <div class="card-body">
+                            <h3 class="card-title">Master the Power of Media</h3>
+                            <p class="card-text">Unlock the Digital World</p>
+                          </div>
+                        </div>
+                        <div class="flip-card-back p-4 d-flex align-items-center">
+                          <div>
+                            <p class="mb-2">Think it’s just a scroll or a viral post? Think again. Let's uncover what drives our digital behavior and how media hooks our attention. Through hands-on projects, you’ll learn the psychology behind every click and how to create impactful content while staying in control. Let's crack the code of media influence.</p>
+                            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#PsychologyModal">Learn more</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 4 -->
+                  <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="flip-card-wrapper card" tabindex="0" aria-label="Life-Lab track. Click to view details.">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img class="card-img-top" src="../frontend/img/pre-med.png" alt="Life-Lab track logo">
+                          <div class="card-body">
+                            <h3 class="card-title">Life-Lab</h3>
+                            <p class="card-text">Life-Lab: Biology and Pre-Med in Action</p>
+                          </div>
+                        </div>
+                        <div class="flip-card-back p-4 d-flex align-items-center">
+                          <div>
+                            <p class="mb-2"> Hands-on learning in state-of-the-art labs. Perform dissections, explore cells, use VR to examine anatomy, and tackle real-world scientific challenges. </p>
+                            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#PremedModal">Learn more</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <!-- track Section End -->
+            <!-- Typical Section Start -->
+            <section id="typicalday" class="track-section section-padding">
+              <div class="container-fluid">
+                <div class="row text-center p-0 p-sm-4 d-flex justify-content-center align-items-center">
+                  <div class="col-12 decorative-lines mb-5 p-3 p-sm-0">
+                    <h2>A Day at AUD Summer Camp</h2>
+                  </div>
+                  <div class="timeline col-12 col-xl-10 d-flex flex-column flex-sm-row gap-4 flex-wrap justify-content-center">
+                    <div class="">
+                      <div class="images-box">
+                        <div class="icon">
+                          <i class="lni-coffee-cup" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <h3>Breakfast</h3>
+                      <span class="time">8:00 a.m. - 8:45 a.m.</span>
+                    </div>
+                    <div class="">
+                      <div class="images-box">
+                        <div class="icon">
+                          <i class="lni-library" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <h3>Modules</h3>
+                      <span class="time">9:00 a.m. - 1:30 p.m.</span>
+                    </div>
+                    <div class="">
+                      <div class="images-box">
+                        <div class="icon">
+                          <i class="lni-dinner" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <h3>Lunch &amp; Rest</h3>
+                      <span class="time">2:00 p.m. - 4:00 p.m.</span>
+                    </div>
+                    <div class="">
+                      <div class="images-box">
+                        <div class="icon">
+                          <i class="lni-bus" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <h3>Excursion</h3>
+                      <span class="time" aria-hidden="true">4:00 p.m. - 6:30 p.m.</span>
+                    </div>
+                    <div class="">
+                      <div class="images-box">
+                        <div class="icon">
+                          <i class="lni-service" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <h3>Dinner</h3>
+                      <span class="time">7:00 p.m. - 8:00 p.m.</span>
+                    </div>
+                    <div class="">
+                      <div class="images-box">
+                        <div class="icon">
+                          <i class="lni-network" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <h3>Campus Social Activity</h3>
+                      <span class="time">8:00 p.m. - 10:00 p.m.</span>
+                    </div>
+                    <div class="">
+                      <div class="images-box">
+                        <div class="icon">
+                          <i class="lni-night" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <h3>Lights Off</h3>
+                      <span class="time">10:00 p.m.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Typical Section End -->
+            <!-- Registration Modal -->
+            <div class="modal fade" id="myRegistrationform" tabindex="-1" aria-labelledby="myRegistrationformLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="myRegistrationformLabel">Apply now</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="form-wrapper">
+                            <asp:ScriptManager runat="server"></asp:ScriptManager>
+                            <div class="row mt-2" id="DivRegistrationForm" runat="server">
+                              <div class="col-md-12" style="margin-bottom:15px;">
+                                <p>Fill the form below and we will send you detailed information on the next step.</p>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6 form-line">
+                                  <div class="input-group mb-3">
+                                    <input ID="txtStudentFName" class="form-control rounded-pill" placeholder="First Name" ValidationGroup="registerform" />
+                                    <div class="help-block with-errors">
+                                      <asp:RequiredFieldValidator ControlToValidate="txtStudentFName" Display="dynamic" ErrorMessage="Please fill out this field." ID="rfvName" RunAt="Server" ValidationGroup="registerform"></asp:RequiredFieldValidator>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 form-line">
+                                  <div class="input-group mb-3">
+                                    <input ID="txtStudentLName" runat="server" Class="form-control rounded-pill" placeholder="Last Name" ValidationGroup="registerform" />
+                                    <div class="help-block with-errors">
+                                      <asp:RequiredFieldValidator ControlToValidate="txtStudentLName" Display="dynamic" ErrorMessage="Please fill out this field." ID="RequiredFieldValidator2" RunAt="Server" ValidationGroup="registerform"></asp:RequiredFieldValidator>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6 form-line">
+                                  <div class="input-group mb-3 date">
+                                    <input ID="txtDateofBirth" runat="server" Class="form-control rounded-pill" placeholder="Date of Birth (MM/DD/YYYY)" ValidationGroup="registerform" ClientIDMode="Static" />
+                                    <span class="input-group-append"></span>
+                                    <div class="help-block with-errors">
+                                      <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="txtDateofBirth" ValidationExpression="^(0[1-9]|1[0-2])(\/|-)(0[1-9]|[12][0-9]|3[01])(\/|-)(19|20)\d{2}$" Display="Dynamic" ErrorMessage="Please enter valid Date of Birth (MM/DD/YYYY)" ValidationGroup="registerform" />
+                                      <asp:RequiredFieldValidator ControlToValidate="txtDateofBirth" Display="dynamic" ErrorMessage="Please fill out this field." ID="RequiredFieldValidator5" RunAt="Server" ValidationGroup="registerform"></asp:RequiredFieldValidator>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 form-line">
+                                  <div class="input-group mb-3">
+                                    <label for="ddStudentGender" class="sr-only">Select gender</label>
+                                    <select ID="ddStudentGender" runat="server" class="form-control rounded-pill" data-error="Please select">
+                                      <option selected Value="0">Gender</option>
+                                      <option Value="Male">Male</option>
+                                      <option Value="Female">Female</option>
+                                      <option Value="Do not wish to specify">Do not wish to specify</option>
+                                    </select>
+                                    <div class="help-block with-errors">
+                                      <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="ddStudentGender" InitialValue="0" ErrorMessage="Please select" ValidationGroup="registerform" Display="Dynamic" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6 form-line">
+                                  <div class="input-group mb-3">
+                                    <input ID="txtStudentEmail" runat="server" Class="form-control rounded-pill" name="Student's Email" placeholder="Student's Email" data-error="Please fill out this field." />
+                                    <div class="help-block with-errors">
+                                      <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtStudentEmail" ValidationExpression="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" Display="Dynamic" ErrorMessage="Please enter valid Email" ValidationGroup="registerform" />
+                                      <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtStudentEmail" Display="Dynamic" ErrorMessage="Please fill out this field." ValidationGroup="registerform" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 form-line">
+                                  <div class="input-group mb-3">
+                                    <input ID="txtMobileNo" ClientIDMode="Static" class="form-control rounded-pill" runat="server" ValidationGroup="registerform" placeholder="Mobile Number" />
+                                    <input ID="txtFullMobileNo" ClientIDMode="Static" class="form-control hide" runat="server" ValidationGroup="registerform" />
+                                    <div class="help-block with-errors">
+                                      <asp:label id="errormsg33" ClientIDMode="Static" class="hide" runat="server">Please enter correct Number</asp:label>
+                                      <asp:RequiredFieldValidator ControlToValidate="txtFullMobileNo" Display="dynamic" ErrorMessage="" ID="RequiredFieldValidator6" RunAt="Server" ValidationGroup="registerform"></asp:RequiredFieldValidator>
+                                      <asp:RequiredFieldValidator ControlToValidate="txtMobileNo" Display="dynamic" ErrorMessage="Please fill out this field." ID="RequiredFieldValidator7" RunAt="Server" ValidationGroup="registerform"></asp:RequiredFieldValidator>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6 form-line">
+                                  <div class="input-group mb-3">
+                                    <label for="ddTrack" class="sr-only">Select prefered track</label>
+                                    <select ID="ddTrack" runat="server" class="form-control rounded-pill">
+                                      <option value="" selected>Preferred Track</option>
+                                      <option value="">Empowered Leadership: Shaping an Influential Journey</option>
+                                      <option value="">Tech Pioneers: Unleashing Adventures in AI, Game Design, Robotics, and VR</option>
+                                      <option value="">Master the Power of Media: Unlock the Digital World</option>
+                                      <option value="">Life-Lab: Biology and Pre-Med in Action</option>
+                                    </select>
+                                    <div class="help-block with-errors">
+                                      <asp:RequiredFieldValidator ID="rfvTrack" runat="server" ControlToValidate="ddTrack" InitialValue="0" ErrorMessage="Please select" ValidationGroup="registerform" Display="Dynamic" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 form-line">
+                                  <div class="input-group mb-3">
+                                    <label for="ddCountryResidence" class="sr-only">Select country of residence</label>
+                                    <select ID="ddCountryResidence" runat="server" class="form-control rounded-pill" required="required">
+                                      <option Selected value="0">Country of Residence</option>
+                                      <option value="United Arab Emirates">United Arab Emirates</option>
+                                      <option value="Saudi Arabia">Saudi Arabia</option>
+                                      <option value="Bahrain">Bahrain</option>
+                                      <option value="Kuwait">Kuwait</option>
+                                      <option value="Oman">Oman</option>
+                                      <option value="Qatar">Qatar</option>
+                                      <option value="Afghanistan">Afghanistan</option>
+                                      <option value="Albania">Albania</option>
+                                      <option value="Algeria">Algeria</option>
+                                      <option value="American Samoa">American Samoa</option>
+                                      <option value="Andorra">Andorra</option>
+                                      <option value="Angola">Angola</option>
+                                      <option value="Anguilla">Anguilla</option>
+                                      <option value="Antarctica">Antarctica</option>
+                                      <option value="Antigua And Barbuda">Antigua And Barbuda</option>
+                                      <option value="Argentina">Argentina</option>
+                                      <option value="Armenia">Armenia</option>
+                                      <option value="Aruba">Aruba</option>
+                                      <option value="Australia">Australia</option>
+                                      <option value="Austria">Austria</option>
+                                      <option value="Azerbaijan">Azerbaijan</option>
+                                      <option value="Bahamas The">Bahamas The</option>
+                                      <option value="Bangladesh">Bangladesh</option>
+                                      <option value="Barbados">Barbados</option>
+                                      <option value="Belarus">Belarus</option>
+                                      <option value="Belgium">Belgium</option>
+                                      <option value="Belize">Belize</option>
+                                      <option value="Benin">Benin</option>
+                                      <option value="Bermuda">Bermuda</option>
+                                      <option value="Bhutan">Bhutan</option>
+                                      <option value="Bolivia">Bolivia</option>
+                                      <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                      <option value="Botswana">Botswana</option>
+                                      <option value="Bouvet Island">Bouvet Island</option>
+                                      <option value="Brazil">Brazil</option>
+                                      <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                                      <option value="Brunei">Brunei</option>
+                                      <option value="Bulgaria">Bulgaria</option>
+                                      <option value="Burkina Faso">Burkina Faso</option>
+                                      <option value="Burundi">Burundi</option>
+                                      <option value="Cambodia">Cambodia</option>
+                                      <option value="Cameroon">Cameroon</option>
+                                      <option value="Canada">Canada</option>
+                                      <option value="Cape Verde">Cape Verde</option>
+                                      <option value="Cayman Islands">Cayman Islands</option>
+                                      <option value="Central African Republic">Central African Republic</option>
+                                      <option value="Chad">Chad</option>
+                                      <option value="Chile">Chile</option>
+                                      <option value="China">China</option>
+                                      <option value="Christmas Island">Christmas Island</option>
+                                      <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                                      <option value="Colombia">Colombia</option>
+                                      <option value="Comoros">Comoros</option>
+                                      <option value="Republic Of The Congo">Republic Of The Congo</option>
+                                      <option value="Democratic Republic Of The Congo">Democratic Republic Of The Congo</option>
+                                      <option value="Cook Islands">Cook Islands</option>
+                                      <option value="Costa Rica">Costa Rica</option>
+                                      <option value="Cote D&#39;Ivoire (Ivory Coast)">Cote D&#39;Ivoire (Ivory Coast)</option>
+                                      <option value="Croatia (Hrvatska)">Croatia (Hrvatska)</option>
+                                      <option value="Cuba">Cuba</option>
+                                      <option value="Cyprus">Cyprus</option>
+                                      <option value="Czech Republic">Czech Republic</option>
+                                      <option value="Denmark">Denmark</option>
+                                      <option value="Djibouti">Djibouti</option>
+                                      <option value="Dominica">Dominica</option>
+                                      <option value="Dominican Republic">Dominican Republic</option>
+                                      <option value="East Timor">East Timor</option>
+                                      <option value="Ecuador">Ecuador</option>
+                                      <option value="Egypt">Egypt</option>
+                                      <option value="El Salvador">El Salvador</option>
+                                      <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                      <option value="Eritrea">Eritrea</option>
+                                      <option value="Estonia">Estonia</option>
+                                      <option value="Ethiopia">Ethiopia</option>
+                                      <option value="External Territories of Australia">External Territories of Australia</option>
+                                      <option value="Falkland Islands">Falkland Islands</option>
+                                      <option value="Faroe Islands">Faroe Islands</option>
+                                      <option value="Fiji Islands">Fiji Islands</option>
+                                      <option value="Finland">Finland</option>
+                                      <option value="France">France</option>
+                                      <option value="French Guiana">French Guiana</option>
+                                      <option value="French Polynesia">French Polynesia</option>
+                                      <option value="French Southern Territories">French Southern Territories</option>
+                                      <option value="Gabon">Gabon</option>
+                                      <option value="Gambia The">Gambia The</option>
+                                      <option value="Georgia">Georgia</option>
+                                      <option value="Germany">Germany</option>
+                                      <option value="Ghana">Ghana</option>
+                                      <option value="Gibraltar">Gibraltar</option>
+                                      <option value="Greece">Greece</option>
+                                      <option value="Greenland">Greenland</option>
+                                      <option value="Grenada">Grenada</option>
+                                      <option value="Guadeloupe">Guadeloupe</option>
+                                      <option value="Guam">Guam</option>
+                                      <option value="Guatemala">Guatemala</option>
+                                      <option value="Guernsey and Alderney">Guernsey and Alderney</option>
+                                      <option value="Guinea">Guinea</option>
+                                      <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                      <option value="Guyana">Guyana</option>
+                                      <option value="Haiti">Haiti</option>
+                                      <option value="Heard and McDonald Islands">Heard and McDonald Islands</option>
+                                      <option value="Honduras">Honduras</option>
+                                      <option value="Hong Kong S.A.R.">Hong Kong S.A.R.</option>
+                                      <option value="Hungary">Hungary</option>
+                                      <option value="Iceland">Iceland</option>
+                                      <option value="India">India</option>
+                                      <option value="Indonesia">Indonesia</option>
+                                      <option value="Iran">Iran</option>
+                                      <option value="Iraq">Iraq</option>
+                                      <option value="Ireland">Ireland</option>
+                                      <option value="Israel">Israel</option>
+                                      <option value="Italy">Italy</option>
+                                      <option value="Jamaica">Jamaica</option>
+                                      <option value="Japan">Japan</option>
+                                      <option value="Jersey">Jersey</option>
+                                      <option value="Jordan">Jordan</option>
+                                      <option value="Kazakhstan">Kazakhstan</option>
+                                      <option value="Kenya">Kenya</option>
+                                      <option value="Kiribati">Kiribati</option>
+                                      <option value="Korea North">Korea North</option>
+                                      <option value="Korea South">Korea South</option>
+                                      <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                      <option value="Laos">Laos</option>
+                                      <option value="Latvia">Latvia</option>
+                                      <option value="Lebanon">Lebanon</option>
+                                      <option value="Lesotho">Lesotho</option>
+                                      <option value="Liberia">Liberia</option>
+                                      <option value="Libya">Libya</option>
+                                      <option value="Liechtenstein">Liechtenstein</option>
+                                      <option value="Lithuania">Lithuania</option>
+                                      <option value="Luxembourg">Luxembourg</option>
+                                      <option value="Macau S.A.R.">Macau S.A.R.</option>
+                                      <option value="Macedonia">Macedonia</option>
+                                      <option value="Madagascar">Madagascar</option>
+                                      <option value="Malawi">Malawi</option>
+                                      <option value="Malaysia">Malaysia</option>
+                                      <option value="Maldives">Maldives</option>
+                                      <option value="Mali">Mali</option>
+                                      <option value="Malta">Malta</option>
+                                      <option value="Man (Isle of)">Man (Isle of)</option>
+                                      <option value="Marshall Islands">Marshall Islands</option>
+                                      <option value="Martinique">Martinique</option>
+                                      <option value="Mauritania">Mauritania</option>
+                                      <option value="Mauritius">Mauritius</option>
+                                      <option value="Mayotte">Mayotte</option>
+                                      <option value="Mexico">Mexico</option>
+                                      <option value="Micronesia">Micronesia</option>
+                                      <option value="Moldova">Moldova</option>
+                                      <option value="Monaco">Monaco</option>
+                                      <option value="Mongolia">Mongolia</option>
+                                      <option value="Montserrat">Montserrat</option>
+                                      <option value="Morocco">Morocco</option>
+                                      <option value="Mozambique">Mozambique</option>
+                                      <option value="Myanmar">Myanmar</option>
+                                      <option value="Namibia">Namibia</option>
+                                      <option value="Nauru">Nauru</option>
+                                      <option value="Nepal">Nepal</option>
+                                      <option value="Netherlands Antilles">Netherlands Antilles</option>
+                                      <option value="Netherlands The">Netherlands The</option>
+                                      <option value="New Caledonia">New Caledonia</option>
+                                      <option value="New Zealand">New Zealand</option>
+                                      <option value="Nicaragua">Nicaragua</option>
+                                      <option value="Niger">Niger</option>
+                                      <option value="Nigeria">Nigeria</option>
+                                      <option value="Niue">Niue</option>
+                                      <option value="Norfolk Island">Norfolk Island</option>
+                                      <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                      <option value="Norway">Norway</option>
+                                      <option value="Pakistan">Pakistan</option>
+                                      <option value="Palau">Palau</option>
+                                      <option value="Palestinian Territory Occupied">Palestinian Territory Occupied</option>
+                                      <option value="Panama">Panama</option>
+                                      <option value="Papua new Guinea">Papua new Guinea</option>
+                                      <option value="Paraguay">Paraguay</option>
+                                      <option value="Peru">Peru</option>
+                                      <option value="Philippines">Philippines</option>
+                                      <option value="Pitcairn Island">Pitcairn Island</option>
+                                      <option value="Poland">Poland</option>
+                                      <option value="Portugal">Portugal</option>
+                                      <option value="Puerto Rico">Puerto Rico</option>
+                                      <option value="Reunion">Reunion</option>
+                                      <option value="Romania">Romania</option>
+                                      <option value="Russia">Russia</option>
+                                      <option value="Rwanda">Rwanda</option>
+                                      <option value="Saint Helena">Saint Helena</option>
+                                      <option value="Saint Kitts And Nevis">Saint Kitts And Nevis</option>
+                                      <option value="Saint Lucia">Saint Lucia</option>
+                                      <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                                      <option value="Saint Vincent And The Grenadines">Saint Vincent And The Grenadines</option>
+                                      <option value="Samoa">Samoa</option>
+                                      <option value="San Marino">San Marino</option>
+                                      <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                      <option value="Senegal">Senegal</option>
+                                      <option value="Serbia">Serbia</option>
+                                      <option value="Seychelles">Seychelles</option>
+                                      <option value="Sierra Leone">Sierra Leone</option>
+                                      <option value="Singapore">Singapore</option>
+                                      <option value="Slovakia">Slovakia</option>
+                                      <option value="Slovenia">Slovenia</option>
+                                      <option value="Smaller Territories of the UK">Smaller Territories of the UK</option>
+                                      <option value="Solomon Islands">Solomon Islands</option>
+                                      <option value="Somalia">Somalia</option>
+                                      <option value="South Africa">South Africa</option>
+                                      <option value="South Georgia">South Georgia</option>
+                                      <option value="South Sudan">South Sudan</option>
+                                      <option value="Spain">Spain</option>
+                                      <option value="Sri Lanka">Sri Lanka</option>
+                                      <option value="Sudan">Sudan</option>
+                                      <option value="Suriname">Suriname</option>
+                                      <option value="Svalbard And Jan Mayen Islands">Svalbard And Jan Mayen Islands</option>
+                                      <option value="Swaziland">Swaziland</option>
+                                      <option value="Sweden">Sweden</option>
+                                      <option value="Switzerland">Switzerland</option>
+                                      <option value="Syria">Syria</option>
+                                      <option value="Taiwan">Taiwan</option>
+                                      <option value="Tajikistan">Tajikistan</option>
+                                      <option value="Tanzania">Tanzania</option>
+                                      <option value="Thailand">Thailand</option>
+                                      <option value="Togo">Togo</option>
+                                      <option value="Tokelau">Tokelau</option>
+                                      <option value="Tonga">Tonga</option>
+                                      <option value="Trinidad And Tobago">Trinidad And Tobago</option>
+                                      <option value="Tunisia">Tunisia</option>
+                                      <option value="Turkey">Turkey</option>
+                                      <option value="Turkmenistan">Turkmenistan</option>
+                                      <option value="Turks And Caicos Islands">Turks And Caicos Islands</option>
+                                      <option value="Tuvalu">Tuvalu</option>
+                                      <option value="Uganda">Uganda</option>
+                                      <option value="Ukraine">Ukraine</option>
+                                      <option value="United Kingdom">United Kingdom</option>
+                                      <option value="United States">United States</option>
+                                      <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                                      <option value="Uruguay">Uruguay</option>
+                                      <option value="Uzbekistan">Uzbekistan</option>
+                                      <option value="Vanuatu">Vanuatu</option>
+                                      <option value="Vatican City State (Holy See)">Vatican City State (Holy See)</option>
+                                      <option value="Venezuela">Venezuela</option>
+                                      <option value="Vietnam">Vietnam</option>
+                                      <option value="Virgin Islands (British)">Virgin Islands (British)</option>
+                                      <option value="Virgin Islands (US)">Virgin Islands (US)</option>
+                                      <option value="Wallis And Futuna Islands">Wallis And Futuna Islands</option>
+                                      <option value="Western Sahara">Western Sahara</option>
+                                      <option value="Yemen">Yemen</option>
+                                      <option value="Yugoslavia">Yugoslavia</option>
+                                      <option value="Zambia">Zambia</option>
+                                      <option value="Zimbabwe">Zimbabwe</option>
+                                    </select>
+                                    <div class="help-block with-errors">
+                                      <asp:RequiredFieldValidator ID="rfvCountryResidence" runat="server" ControlToValidate="ddCountryResidence" InitialValue="0" ErrorMessage="Please select" ValidationGroup="registerform" Display="Dynamic" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6 form-line">
+                                  <div class="input-group mb-3">
+                                    <label for="ddNationality" class="sr-only">Select nationality</label>
+                                    <select ID="ddNationality" runat="server" class="form-control rounded-pill" required="required">
+                                      <option Selected value="0">Nationality</option>
+                                      <option value="United Arab Emirates">United Arab Emirates</option>
+                                      <option value="Saudi Arabia">Saudi Arabia</option>
+                                      <option value="Bahrain">Bahrain</option>
+                                      <option value="Kuwait">Kuwait</option>
+                                      <option value="Oman">Oman</option>
+                                      <option value="Qatar">Qatar</option>
+                                      <option value="Afghanistan">Afghanistan</option>
+                                      <option value="Albania">Albania</option>
+                                      <option value="Algeria">Algeria</option>
+                                      <option value="American Samoa">American Samoa</option>
+                                      <option value="Andorra">Andorra</option>
+                                      <option value="Angola">Angola</option>
+                                      <option value="Anguilla">Anguilla</option>
+                                      <option value="Antarctica">Antarctica</option>
+                                      <option value="Antigua And Barbuda">Antigua And Barbuda</option>
+                                      <option value="Argentina">Argentina</option>
+                                      <option value="Armenia">Armenia</option>
+                                      <option value="Aruba">Aruba</option>
+                                      <option value="Australia">Australia</option>
+                                      <option value="Austria">Austria</option>
+                                      <option value="Azerbaijan">Azerbaijan</option>
+                                      <option value="Bahamas The">Bahamas The</option>
+                                      <option value="Bangladesh">Bangladesh</option>
+                                      <option value="Barbados">Barbados</option>
+                                      <option value="Belarus">Belarus</option>
+                                      <option value="Belgium">Belgium</option>
+                                      <option value="Belize">Belize</option>
+                                      <option value="Benin">Benin</option>
+                                      <option value="Bermuda">Bermuda</option>
+                                      <option value="Bhutan">Bhutan</option>
+                                      <option value="Bolivia">Bolivia</option>
+                                      <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                      <option value="Botswana">Botswana</option>
+                                      <option value="Bouvet Island">Bouvet Island</option>
+                                      <option value="Brazil">Brazil</option>
+                                      <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                                      <option value="Brunei">Brunei</option>
+                                      <option value="Bulgaria">Bulgaria</option>
+                                      <option value="Burkina Faso">Burkina Faso</option>
+                                      <option value="Burundi">Burundi</option>
+                                      <option value="Cambodia">Cambodia</option>
+                                      <option value="Cameroon">Cameroon</option>
+                                      <option value="Canada">Canada</option>
+                                      <option value="Cape Verde">Cape Verde</option>
+                                      <option value="Cayman Islands">Cayman Islands</option>
+                                      <option value="Central African Republic">Central African Republic</option>
+                                      <option value="Chad">Chad</option>
+                                      <option value="Chile">Chile</option>
+                                      <option value="China">China</option>
+                                      <option value="Christmas Island">Christmas Island</option>
+                                      <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                                      <option value="Colombia">Colombia</option>
+                                      <option value="Comoros">Comoros</option>
+                                      <option value="Republic Of The Congo">Republic Of The Congo</option>
+                                      <option value="Democratic Republic Of The Congo">Democratic Republic Of The Congo</option>
+                                      <option value="Cook Islands">Cook Islands</option>
+                                      <option value="Costa Rica">Costa Rica</option>
+                                      <option value="Cote D&#39;Ivoire (Ivory Coast)">Cote D&#39;Ivoire (Ivory Coast)</option>
+                                      <option value="Croatia (Hrvatska)">Croatia (Hrvatska)</option>
+                                      <option value="Cuba">Cuba</option>
+                                      <option value="Cyprus">Cyprus</option>
+                                      <option value="Czech Republic">Czech Republic</option>
+                                      <option value="Denmark">Denmark</option>
+                                      <option value="Djibouti">Djibouti</option>
+                                      <option value="Dominica">Dominica</option>
+                                      <option value="Dominican Republic">Dominican Republic</option>
+                                      <option value="East Timor">East Timor</option>
+                                      <option value="Ecuador">Ecuador</option>
+                                      <option value="Egypt">Egypt</option>
+                                      <option value="El Salvador">El Salvador</option>
+                                      <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                      <option value="Eritrea">Eritrea</option>
+                                      <option value="Estonia">Estonia</option>
+                                      <option value="Ethiopia">Ethiopia</option>
+                                      <option value="External Territories of Australia">External Territories of Australia</option>
+                                      <option value="Falkland Islands">Falkland Islands</option>
+                                      <option value="Faroe Islands">Faroe Islands</option>
+                                      <option value="Fiji Islands">Fiji Islands</option>
+                                      <option value="Finland">Finland</option>
+                                      <option value="France">France</option>
+                                      <option value="French Guiana">French Guiana</option>
+                                      <option value="French Polynesia">French Polynesia</option>
+                                      <option value="French Southern Territories">French Southern Territories</option>
+                                      <option value="Gabon">Gabon</option>
+                                      <option value="Gambia The">Gambia The</option>
+                                      <option value="Georgia">Georgia</option>
+                                      <option value="Germany">Germany</option>
+                                      <option value="Ghana">Ghana</option>
+                                      <option value="Gibraltar">Gibraltar</option>
+                                      <option value="Greece">Greece</option>
+                                      <option value="Greenland">Greenland</option>
+                                      <option value="Grenada">Grenada</option>
+                                      <option value="Guadeloupe">Guadeloupe</option>
+                                      <option value="Guam">Guam</option>
+                                      <option value="Guatemala">Guatemala</option>
+                                      <option value="Guernsey and Alderney">Guernsey and Alderney</option>
+                                      <option value="Guinea">Guinea</option>
+                                      <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                      <option value="Guyana">Guyana</option>
+                                      <option value="Haiti">Haiti</option>
+                                      <option value="Heard and McDonald Islands">Heard and McDonald Islands</option>
+                                      <option value="Honduras">Honduras</option>
+                                      <option value="Hong Kong S.A.R.">Hong Kong S.A.R.</option>
+                                      <option value="Hungary">Hungary</option>
+                                      <option value="Iceland">Iceland</option>
+                                      <option value="India">India</option>
+                                      <option value="Indonesia">Indonesia</option>
+                                      <option value="Iran">Iran</option>
+                                      <option value="Iraq">Iraq</option>
+                                      <option value="Ireland">Ireland</option>
+                                      <option value="Israel">Israel</option>
+                                      <option value="Italy">Italy</option>
+                                      <option value="Jamaica">Jamaica</option>
+                                      <option value="Japan">Japan</option>
+                                      <option value="Jersey">Jersey</option>
+                                      <option value="Jordan">Jordan</option>
+                                      <option value="Kazakhstan">Kazakhstan</option>
+                                      <option value="Kenya">Kenya</option>
+                                      <option value="Kiribati">Kiribati</option>
+                                      <option value="Korea North">Korea North</option>
+                                      <option value="Korea South">Korea South</option>
+                                      <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                      <option value="Laos">Laos</option>
+                                      <option value="Latvia">Latvia</option>
+                                      <option value="Lebanon">Lebanon</option>
+                                      <option value="Lesotho">Lesotho</option>
+                                      <option value="Liberia">Liberia</option>
+                                      <option value="Libya">Libya</option>
+                                      <option value="Liechtenstein">Liechtenstein</option>
+                                      <option value="Lithuania">Lithuania</option>
+                                      <option value="Luxembourg">Luxembourg</option>
+                                      <option value="Macau S.A.R.">Macau S.A.R.</option>
+                                      <option value="Macedonia">Macedonia</option>
+                                      <option value="Madagascar">Madagascar</option>
+                                      <option value="Malawi">Malawi</option>
+                                      <option value="Malaysia">Malaysia</option>
+                                      <option value="Maldives">Maldives</option>
+                                      <option value="Mali">Mali</option>
+                                      <option value="Malta">Malta</option>
+                                      <option value="Man (Isle of)">Man (Isle of)</option>
+                                      <option value="Marshall Islands">Marshall Islands</option>
+                                      <option value="Martinique">Martinique</option>
+                                      <option value="Mauritania">Mauritania</option>
+                                      <option value="Mauritius">Mauritius</option>
+                                      <option value="Mayotte">Mayotte</option>
+                                      <option value="Mexico">Mexico</option>
+                                      <option value="Micronesia">Micronesia</option>
+                                      <option value="Moldova">Moldova</option>
+                                      <option value="Monaco">Monaco</option>
+                                      <option value="Mongolia">Mongolia</option>
+                                      <option value="Montserrat">Montserrat</option>
+                                      <option value="Morocco">Morocco</option>
+                                      <option value="Mozambique">Mozambique</option>
+                                      <option value="Myanmar">Myanmar</option>
+                                      <option value="Namibia">Namibia</option>
+                                      <option value="Nauru">Nauru</option>
+                                      <option value="Nepal">Nepal</option>
+                                      <option value="Netherlands Antilles">Netherlands Antilles</option>
+                                      <option value="Netherlands The">Netherlands The</option>
+                                      <option value="New Caledonia">New Caledonia</option>
+                                      <option value="New Zealand">New Zealand</option>
+                                      <option value="Nicaragua">Nicaragua</option>
+                                      <option value="Niger">Niger</option>
+                                      <option value="Nigeria">Nigeria</option>
+                                      <option value="Niue">Niue</option>
+                                      <option value="Norfolk Island">Norfolk Island</option>
+                                      <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                      <option value="Norway">Norway</option>
+                                      <option value="Pakistan">Pakistan</option>
+                                      <option value="Palau">Palau</option>
+                                      <option value="Palestinian Territory Occupied">Palestinian Territory Occupied</option>
+                                      <option value="Panama">Panama</option>
+                                      <option value="Papua new Guinea">Papua new Guinea</option>
+                                      <option value="Paraguay">Paraguay</option>
+                                      <option value="Peru">Peru</option>
+                                      <option value="Philippines">Philippines</option>
+                                      <option value="Pitcairn Island">Pitcairn Island</option>
+                                      <option value="Poland">Poland</option>
+                                      <option value="Portugal">Portugal</option>
+                                      <option value="Puerto Rico">Puerto Rico</option>
+                                      <option value="Reunion">Reunion</option>
+                                      <option value="Romania">Romania</option>
+                                      <option value="Russia">Russia</option>
+                                      <option value="Rwanda">Rwanda</option>
+                                      <option value="Saint Helena">Saint Helena</option>
+                                      <option value="Saint Kitts And Nevis">Saint Kitts And Nevis</option>
+                                      <option value="Saint Lucia">Saint Lucia</option>
+                                      <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                                      <option value="Saint Vincent And The Grenadines">Saint Vincent And The Grenadines</option>
+                                      <option value="Samoa">Samoa</option>
+                                      <option value="San Marino">San Marino</option>
+                                      <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                      <option value="Senegal">Senegal</option>
+                                      <option value="Serbia">Serbia</option>
+                                      <option value="Seychelles">Seychelles</option>
+                                      <option value="Sierra Leone">Sierra Leone</option>
+                                      <option value="Singapore">Singapore</option>
+                                      <option value="Slovakia">Slovakia</option>
+                                      <option value="Slovenia">Slovenia</option>
+                                      <option value="Smaller Territories of the UK">Smaller Territories of the UK</option>
+                                      <option value="Solomon Islands">Solomon Islands</option>
+                                      <option value="Somalia">Somalia</option>
+                                      <option value="South Africa">South Africa</option>
+                                      <option value="South Georgia">South Georgia</option>
+                                      <option value="South Sudan">South Sudan</option>
+                                      <option value="Spain">Spain</option>
+                                      <option value="Sri Lanka">Sri Lanka</option>
+                                      <option value="Sudan">Sudan</option>
+                                      <option value="Suriname">Suriname</option>
+                                      <option value="Svalbard And Jan Mayen Islands">Svalbard And Jan Mayen Islands</option>
+                                      <option value="Swaziland">Swaziland</option>
+                                      <option value="Sweden">Sweden</option>
+                                      <option value="Switzerland">Switzerland</option>
+                                      <option value="Syria">Syria</option>
+                                      <option value="Taiwan">Taiwan</option>
+                                      <option value="Tajikistan">Tajikistan</option>
+                                      <option value="Tanzania">Tanzania</option>
+                                      <option value="Thailand">Thailand</option>
+                                      <option value="Togo">Togo</option>
+                                      <option value="Tokelau">Tokelau</option>
+                                      <option value="Tonga">Tonga</option>
+                                      <option value="Trinidad And Tobago">Trinidad And Tobago</option>
+                                      <option value="Tunisia">Tunisia</option>
+                                      <option value="Turkey">Turkey</option>
+                                      <option value="Turkmenistan">Turkmenistan</option>
+                                      <option value="Turks And Caicos Islands">Turks And Caicos Islands</option>
+                                      <option value="Tuvalu">Tuvalu</option>
+                                      <option value="Uganda">Uganda</option>
+                                      <option value="Ukraine">Ukraine</option>
+                                      <option value="United Kingdom">United Kingdom</option>
+                                      <option value="United States">United States</option>
+                                      <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                                      <option value="Uruguay">Uruguay</option>
+                                      <option value="Uzbekistan">Uzbekistan</option>
+                                      <option value="Vanuatu">Vanuatu</option>
+                                      <option value="Vatican City State (Holy See)">Vatican City State (Holy See)</option>
+                                      <option value="Venezuela">Venezuela</option>
+                                      <option value="Vietnam">Vietnam</option>
+                                      <option value="Virgin Islands (British)">Virgin Islands (British)</option>
+                                      <option value="Virgin Islands (US)">Virgin Islands (US)</option>
+                                      <option value="Wallis And Futuna Islands">Wallis And Futuna Islands</option>
+                                      <option value="Western Sahara">Western Sahara</option>
+                                      <option value="Yemen">Yemen</option>
+                                      <option value="Yugoslavia">Yugoslavia</option>
+                                      <option value="Zambia">Zambia</option>
+                                      <option value="Zimbabwe">Zimbabwe</option>
+                                    </select>
+                                    <div class="help-block with-errors">
+                                      <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="ddNationality" InitialValue="0" ErrorMessage="Please select" ValidationGroup="registerform" Display="Dynamic" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 form-line">
+                                  <div class="input-group mb-3">
+                                    <input id="txtSchoolName" runat="server" Class="form-control rounded-pill" name="school" placeholder="High School Name" data-error="Please enter your school" />
+                                    <div class="help-block with-errors">
+                                      <asp:RequiredFieldValidator ControlToValidate="txtSchoolName" Display="dynamic" ErrorMessage="Please fill out this field." ID="rfvSchoolName" RunAt="Server" ValidationGroup="registerform"></asp:RequiredFieldValidator>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6 form-line">
+                                  <div class="input-group mb-3">
+                                    <label for="ddStudentGrade" class="sr-only">Select school grade</label>
+                                    <select ID="ddStudentGrade" runat="server" class="form-control rounded-pill" data-error="Please select">
+                                      <option selected Value="0">Year/Grade</option>
+                                      <option Value="Grade 10/Year 11">Grade 10/Year 11</option>
+                                      <option Value="Grade 11/Year 12">Grade 11/Year 12</option>
+                                    </select>
+                                    <div class="help-block with-errors">
+                                      <asp:RequiredFieldValidator ID="rfvddStudentGrade" runat="server" ControlToValidate="ddStudentGrade" InitialValue="0" ErrorMessage="Please select" ValidationGroup="registerform" Display="Dynamic" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 form-line">
+                                  <div class="input-group mb-3">
+                                    <input ID="txtGuardianName" runat="server" placeholder="Guardian's Name" data-error="Please enter your Guardian's Name" class="form-control rounded-pill" />
+                                    <div class="help-block with-errors">
+                                      <asp:RequiredFieldValidator ControlToValidate="txtGuardianName" Display="dynamic" ErrorMessage="Please fill out this field." ID="rfvGuardianName" RunAt="Server" ValidationGroup="registerform"></asp:RequiredFieldValidator>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6 form-line">
+                                  <div class="input-group mb-3">
+                                    <input ID="txtGuardianEmail" runat="server" Class="form-control rounded-pill" name="email" placeholder="Guardian's Email" data-error="Please enter your Guardian's email" />
+                                    <div class="help-block with-errors">
+                                      <asp:RegularExpressionValidator ID="revtxtEmailAddress" runat="server" ControlToValidate="txtGuardianEmail" ValidationExpression="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" Display="Dynamic" ErrorMessage="Please enter valid Email" ValidationGroup="registerform" />
+                                      <asp:RequiredFieldValidator ID="rfvtxtEmailAddress" runat="server" ControlToValidate="txtGuardianEmail" Display="Dynamic" ErrorMessage="Please fill out this field." ValidationGroup="registerform" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 form-line">
+                                  <div class="input-group mb-3">
+                                    <input ID="txtPhone" ClientIDMode="Static" class="form-control rounded-pill" runat="server" ValidationGroup="registerform" placeholder="Guardian's Mobile No." />
+                                    <input ID="txtFullNumber" ClientIDMode="Static" class="form-control hide" runat="server" ValidationGroup="registerform" />
+                                    <div class="help-block with-errors">
+                                      <asp:label id="errormsg22" ClientIDMode="Static" class="hide" runat="server">Please enter correct Number</asp:label>
+                                      <asp:RequiredFieldValidator ControlToValidate="txtFullNumber" Display="dynamic" ErrorMessage="" ID="rfvtxtFullNumber" RunAt="Server" ValidationGroup="registerform"></asp:RequiredFieldValidator>
+                                      <asp:RequiredFieldValidator ControlToValidate="txtPhone" Display="dynamic" ErrorMessage="Please fill out this field." ID="rfvtxtPhone" RunAt="Server" ValidationGroup="registerform"></asp:RequiredFieldValidator>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6 form-line">
+                                  <div class="help-block">
+                                    <p style="color:#545454;text-align:left; font-size:12.5px;padding-left:20px">Most recent report card <i>(PDF, JPG or PNG only)</i>
+                                    </p>
+                                  </div>
+                                  <div class="input-group mb-3">
+                                    <label for="fuTranscript" class="sr-only"> Upload the most recent report card </label>
+                                    <input type="file" ID="fuTranscript" ClientIDMode="Static" runat="server" ToolTip="Upload the most recent report card" class="form-control rounded-pill" />
+                                    <div class="help-block with-errors">
+                                      <asp:RequiredFieldValidator ID="rfvTranscriptUpload" runat="server" ControlToValidate="fuTranscript" Display="Dynamic" ErrorMessage="Please upload the most recent report card." ValidationGroup="registerform" />
+                                      <asp:RegularExpressionValidator runat="server" ID="RegularExpressionValidator2" Text="The file is not a PDF or JPG or PNG" ControlToValidate="fuTranscript" ValidationExpression="(.*\.([pP][dD][fF]|[jJ][pP][gG]|[jJ][pP][eE][gG]|[pP][nN][gG])$)" Display="Dynamic" ValidationGroup="registerform" />
+                                      <asp:CustomValidator ID="customValidatorTranscriptUpload" runat="server" ErrorMessage="" Display="Dynamic" ControlToValidate="fuTranscript" ValidationGroup="registerform" ClientValidationFunction="checkUploadTranscriptsize();" />
+                                    </div>
+                                    <asp:TextBox ID="txtTranscriptSize" runat="server" text="success" Style="display: none" ValidationGroup="registerform" />
+                                    <div class="help-block with-errors">
+                                      <asp:RequiredFieldValidator ID="rfvTranscriptSize" ErrorMessage="Exceed the allowed file size (max size 10MB)." ControlToValidate="txtTranscriptSize" runat="server" Display="Dynamic" ValidationGroup="registerform" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 form-line">
+                                  <div class="help-block">
+                                    <p style="color:#545454;text-align:left; font-size:12.5px;padding-left:20px"> Valid Passport Copy <i>(PDF, JPG or PNG only)</i>
+                                    </p>
+                                  </div>
+                                  <div class="input-group mb-3">
+                                    <label for="fuPassport" class="sr-only"> Upload valid passport copy </label>
+                                    <input ID="fuPassport" type="file" ClientIDMode="Static" runat="server" ToolTip="Upload you passport copy" class="form-control rounded-pill" />
+                                    <div class="help-block with-errors">
+                                      <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="fuPassport" Display="Dynamic" ErrorMessage="Please upload your passport copy." ValidationGroup="registerform" />
+                                      <asp:RegularExpressionValidator runat="server" ID="RegularExpressionValidator5" Text="The file is not a PDF or JPG or PNG" ControlToValidate="fuPassport" ValidationExpression="(.*\.([pP][dD][fF]|[jJ][pP][gG]|[jJ][pP][eE][gG]|[pP][nN][gG])$)" Display="Dynamic" ValidationGroup="registerform" />
+                                      <asp:CustomValidator ID="customValidatorPassportUpload" runat="server" ErrorMessage="" Display="Dynamic" ControlToValidate="fuPassport" ValidationGroup="registerform" ClientValidationFunction="checkUploadPassportsize();" />
+                                    </div>
+                                    <asp:TextBox ID="txtPassportSize" runat="server" text="success" Style="display: none" ValidationGroup="registerform" />
+                                    <div class="help-block with-errors">
+                                      <asp:RequiredFieldValidator ID="rfvPassportSize" ErrorMessage="Exceed the allowed file size (max size 10MB)." ControlToValidate="txtPassportSize" runat="server" Display="Dynamic" ValidationGroup="registerform" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <asp:UpdatePanel ID="UpdatePanel1" runat="server" class="row">
+                                <ContentTemplate>
+                                  <div class="col-md-6 form-line">
+                                    <div class="input-group mb-3">
+                                      <label for="ddHowDidYouHearAbout" class="sr-only">Select how you heard about AUD camp</label>
+                                      <select ID="ddHowDidYouHearAbout" runat="server" class="form-control rounded-pill" data-error="Please select" OnSelectedIndexChanged="ddHowDidYouHearAbout_SelectedIndexChanged" AutoPostBack="true">
+                                        <option selected Value="0">How did you hear about AUD Summer Camp?</option>
+                                        <option Value="My School Counselor">My School Counselor</option>
+                                        <option Value="AUD Website">AUD Website</option>
+                                        <option Value="Social Media">Social Media </option>
+                                        <option Value="I received an email from AUD">I received an email from AUD </option>
+                                        <option Value="AUD visited my school">AUD visited my school</option>
+                                        <option Value="I visited the AUD campus">I visited the AUD campus </option>
+                                        <option Value="Someone told me about it">Someone told me about it</option>
+                                        <option Value="Other">Other</option>
+                                      </select>
+                                      <div class="help-block with-errors">
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="ddHowDidYouHearAbout" InitialValue="0" ErrorMessage="Please select" ValidationGroup="registerform" Display="Dynamic" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 form-line">
+                                    <div class="input-group mb-3">
+                                      <input Visible="false" style="display:none" ID="txtowDidYouHearAbout_other" runat="server" class="form-control rounded-pill" placeholder="Please specify" ValidationGroup="registerform" />
+                                      <div class="help-block with-errors">
+                                        <asp:RequiredFieldValidator Visible="false" ControlToValidate="txtowDidYouHearAbout_other" Display="dynamic" ErrorMessage="Please fill out this field." ID="rf_txtowDidYouHearAbout_other" RunAt="Server" ValidationGroup="registerform"></asp:RequiredFieldValidator>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </ContentTemplate>
+                              </asp:UpdatePanel>
+                              <div class="col-md-12 mb-5">
+                                <div class="form-submit" style="text-align:center">
+                                  <button ID="BtnRegister" type="button" runat="server" class="btn btn-secondary submitbutton" ValidationGroup="registerform" OnClick="BtnRegister_Click" style="max-width:40%">Submit</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Registration Modal End -->
+            <!-- Recap Start -->
+            <section id="recap">
+              <div class="container-fluid">
+                <div class="row p-4">
+                  <div class="col-12">
+                    <h2 class="text-center text-white">Summer 2025 Recap</h2>
+                  </div>
+                </div>
+                <div class="row d-flex justify-content-center pb-5">
+                  <div class="col-6 col-xl-2">
+                    <div class="card p-3">
+                      <div class="d-flex align-content-center justify-content-center mb-2">
+                        <i class="lni lni-travel text-orange" aria-hidden="true"></i>
+                      </div>
+                      <p class="card-title text-orange h1 text-center">22</p>
+                      <p class="card-title text-center">Different Countries</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-xl-2">
+                    <div class="card p-3">
+                      <div class="d-flex align-content-center justify-content-center mb-2">
+                        <i class="lni lni-world text-orange" aria-hidden="true"></i>
+                      </div>
+                      <p class="card-title text-orange h1 text-center">28</p>
+                      <p class="card-title text-center">Nationalities</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-0 mb-sm-5">
+                  <div class="col-12 col-lg-8">
+                    <!-- Testimonials -->
+                    <div id="carouselTestimonial" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                      </div>
+                      <div class="carousel-inner ">
+                        <div class="carousel-item active ">
+                          <div class="testimony">
+                            <p class="pb-2">"It was a very pleasant experience. Highly recommended. Will send my younger one next year. Thanks to AUD team. Very well organized. Great job.”</p>
+                            <p>
+                              <i class="small">Parent</i>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="testimony">
+                            <p class="pb-2">"Thank you very much for giving Joni an experience he’ll always remember, one that has already made a meaningful impact on both his academic and social life as he prepares for university. His brother Joseph attended the camp last year, and based on his overwhelmingly positive experience, I didn’t hesitate to recommend it to other students who joined Joni this summer. Joseph is now in the process of applying to AUD), a path influenced in part by the inspiration and direction he gained through the camp. I truly appreciate all your efforts, as well as the dedication of the counselors, for creating such a supportive, enriching, and inspiring environment. It’s clear that the program continues to foster personal growth, confidence, and a sense of purpose among the participants.”</p>
+                            <p>
+                              <i class="small">Parent</i>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="testimony">
+                            <p class="pb-2">"I want to thank you for showing my son and his friends that University is something they can do and have fun. You empowered and motivated them from the fullness and bottom of my heart - thank you”</p>
+                            <p>
+                              <i class="small">Parent </i>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="testimony">
+                            <p class="pb-2">"AUD has a lovey campus. My child is a medicine aspirant she loved the labs and overall support provided. Kindly convey our regards to all the mentors and professors. A special thanks to chaperones Abdulla, Nahal, Talal and Leen."</p>
+                            <p>
+                              <i class="small">Parent</i>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="testimony">
+                            <p class="pb-2">"My son and his friends had a BLAST! It was interactive, filled with new experiences and also great evening events! I’d recommend more course options for next year for those hoping to return to camp again.”</p>
+                            <p>
+                              <i class="small">Parent</i>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="testimony">
+                            <p>"Thank you once again for making a difference in the lives of these young people. Our family is incredibly grateful for the wonderful memories and personal growth Allen has gained during his time with you. We are more than happy to recommend your camp to other families and are excited about the possibility of Allen continuing his journey at AUD in the future."</p>
+                            <p class="pb-2">
+                              <i class="small">Parent</i>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="testimony">
+                            <p class="pb-2">"Thank you for such a great program and giving our kids the confidence and support to look forward to university. We are very interested in keeping up with AUD to see how Pasha can attend. Please keep us updated and to see how parents can come visit </p>
+                            <p>
+                              <i class="small">Parent</i>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="testimony">
+                            <p class="pb-2">"Our daughter, Christina Gabriel, had such a memorable and wonderful week at AUD summer camp that she was crying when we picked her up from the airport because she didn’t want to be back home."</p>
+                            <p>
+                              <i class="small">Parent</i>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="testimony">
+                            <p class="pb-2">"I’m also so grateful to the amazing chaperones and professors, they made us feel incredibly safe and cared for throughout the camp. Everyone was always so respectful, kind, and thoughtful. They always made sure to take into account everything we asked. I truly enjoyed every moment"</p>
+                            <p>
+                              <i class="small">Student</i>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonial" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonial" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <!-- Testimonials end -->
+                  </div>
+                  <div class="col-12 col-lg-4 align-items-center recapposition">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start">
+                      <p class="text-white mb-3 text-center text-sm-justify">On July 7th, 2025, the second annual American University in Dubai (AUD) Summer Camp kicked off, bringing together high school students from 22 countries and representing 28 different nationalities. For a week of learning, fun, and friendship, participants explored new cultures, made lasting connections, and collaborated in diverse teams. Each program featured classes led by two professors, guiding students as they developed final projects in their chosen fields.</p>
+                      <a class="btn btn-secondary submitbutton" target="_blank" href="https://aud.edu/all-news/aud-summer-camp-2024-bridging-high-school-and-university/">Read more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="no-padding">
+                  <div class="row">
+                    <div class="col-12 p-0" style="border:0">
+                      <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/FrZnfHQSAN4?si=w_7ZveV3Zb4ZcMnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Recap End -->
+            <!-- FAQ Section Start -->
+            <section id="faq" class="section-padding pt-4">
+              <div class="container-fluid">
+                <div class="row decorative-lines mb-5">
+                  <div class="col-12">
+                    <div class="text-center">
+                      <h2>FAQs</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-12 col-sm-8">
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Are insurance, visa and travel expenses/arrangements included in the registration fees? </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                          <div class="accordion-body"> No, the registration fees cover accommodation, meals, excursion entrance fees, excursions, transport, modules, on-campus activities, and specific airport transfer trips. Participants are required to provide proof of insurance and arrange for their own travel and visa requirements if coming from outside the UAE. </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Are students left unattended? </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body"> No, students are not left unattended unless sleeping in their own rooms. Even throughout the night, AUD provides continuous security and accommodation support unlock. </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> Is accommodation gender-segregated? </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body"> Student housing at AUD is strictly gender segregated. Males and females are not permitted nor able to mix with each other within student housing buildings and premises. </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> Are students allowed to roam around campus after 10:00 p.m.? </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body"> AUD has a strict curfew policy and students at the summer program are not allowed outside their rooms after 10:00 p.m. </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"> Do students share rooms with each other? </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body"> Each student at the summer camp will have his/her own private bedroom and bathroom. </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"> Is AUD culturally diverse? </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body"> AUD is very culturally diverse with students originating from over 100 countries around the world. </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"> Is leaving the campus alone during the day allowed? </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body"> We understand the desire to leave campus, but you'll have to be with the team at all times. We encourage you to make the most of the opportunities and activities available here on campus. There's always something fun or interesting happening, so you won't be missing out! </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine"> Is accommodation gender-segregated? </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body"> Student housing at AUD is strictly gender segregated. Males and females are not permitted nor able to mix with each other within student housing buildings and premises. </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> How old should the students be to be able to join the camp? </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body"> Students should be in grade 10-11/year 11-12 </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- FAQ Section End -->
+            <!-- Map Section Start -->
+            <section id="contact">
+              <div class="container-fluid" style="background:var(--primary-color);">
+                <div class="row flex align-items-center justify-content-center">
+                  <div class="col-lg-4 offset-lg-1 col-12 ">
+                    <div class="row p-3">
+                      <div class="col-md-12 mb-2">
+                        <div class="text-center welcome">
+                          <h2 class="text-white">Ask a Question</h2>
+                        </div>
+                      </div>
+                      <div id="DivAskQuestion" runat="server" visible="true" clientidmode="Static">
+                        <div class="col-md-12 form-line">
+                          <div class="help-block with-errors">
+                            <asp:RequiredFieldValidator ControlToValidate="txtAskFullName" Display="dynamic" ErrorMessage="Please fill out this field." ID="RequiredFieldValidator9" RunAt="Server" ValidationGroup="askquestionform" ForeColor="White"></asp:RequiredFieldValidator>
+                          </div>
+                          <div class="input-group mb-3 ">
+                            <input ID="txtAskFullName" runat="server" class="form-control" placeholder="Your full name" ValidationGroup="askquestionform" ClientIDMode="Static" />
+                          </div>
+                        </div>
+                        <div class="col-md-12 form-line">
+                          <div class="row with-errors">
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtAskEmail" ValidationExpression="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" Display="Dynamic" ErrorMessage="Please enter valid Email" ValidationGroup="askquestionform" ForeColor="White" />
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="txtAskEmail" Display="Dynamic" ErrorMessage="Please fill out this field." ValidationGroup="askquestionform" ForeColor="White" />
+                          </div>
+                          <div class="input-group mb-3">
+                            <input ID="txtAskEmail" runat="server" class="form-control" name="Email" placeholder="Your email address" data-error="Please fill out this field." />
+                          </div>
+                        </div>
+                        <div class="col-md-12 form-line">
+                          <div class="help-block with-errors">
+                            <asp:label id="errormsg44" ClientIDMode="Static" class="hide" runat="server">Please enter correct Number</asp:label>
+                            <asp:RequiredFieldValidator ControlToValidate="txtAskFullPhone" Display="dynamic" ErrorMessage="" ID="RequiredFieldValidator12" RunAt="Server" ValidationGroup="askquestionform"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ControlToValidate="txtAskPhone" Display="dynamic" ErrorMessage="Please fill out this field." ID="RequiredFieldValidator13" RunAt="Server" ValidationGroup="askquestionform" ForeColor="White"></asp:RequiredFieldValidator>
+                          </div>
+                          <div class="input-group mb-3">
+                            <input ID="txtAskPhone" ClientIDMode="Static" class="form-control" runat="server" ValidationGroup="askquestionform" placeholder="Your contact number" />
+                            <input ID="txtAskFullPhone" ClientIDMode="Static" class="form-control hide" runat="server" ValidationGroup="askquestionform" />
+                          </div>
+                        </div>
+                        <div class="col-md-12 form-line">
+                          <div class="help-block with-errors">
+                            <asp:RequiredFieldValidator ControlToValidate="txtAskYourQuestion" Display="dynamic" ErrorMessage="Please fill out this field." ID="RequiredFieldValidator10" RunAt="Server" ValidationGroup="askquestionform" ForeColor="White"></asp:RequiredFieldValidator>
+                          </div>
+                          <div class="input-group mb-3">
+                            <textarea ID="txtAskYourQuestion" runat="server" class="form-control" placeholder="Your question" ValidationGroup="askquestionform" TextMode="MultiLine" rows="4"></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-submit" style="text-align:center">
+                            <button type="button" ID="BtnAskQuestion" runat="server" class="btn btn-secondary submitbutton" ValidationGroup="askquestionform" OnClick="BtnAskQuestion_Click" style="max-width:50%">Submit</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-xs-12 d-flex align-items-center align-content-center" id="DivAskQuestionSuccess" runat="server" visible="false" style="display:none !important">
+                        <div class="container-form">
+                          <div class="form-wrapper" style="box-shadow:2px 2px 20px #777; border-radius:5px">
+                            <div class="row">
+                              <div class="col-md-12 ">
+                                <div class="form-submit">
+                                  <div class="h3 text-center">Thank you. <br />Your form has been submitted and will contact you to answer your question. </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 offset-lg-1 col-12 no-padding">
+                    <div id="conatiner-map">
+                      <iframe title="google maps location of AUD" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14453.258489196402!2d55.1560728!3d25.091209!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b5ce8275517%3A0xdfed21bc9eb36d46!2sAmerican%20University%20in%20Dubai!5e0!3m2!1sen!2sae!4v1674706673878!5m2!1sen!2sae" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
+                </div>
+                <div id="register"></div>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="webinarModal" tabindex="-1" aria-labelledby="webinarModalLabel" aria-hidden="true">
+                <div class="modal-dialog odal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="exampleModalLabel">Summer Camp Webinar</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                      <p>Join our AUD Summer Camp webinar for program details and a Q&A session to learn about the camp activities and get your questions answered. Prepare for an exciting summer!</p>
+                      <p class="text-center pt-3">
+                        <strong>Thursday, May 16, 2024 at 4:00 p.m. (Dubai Time)</strong>
+                      </p>
+                      <p class="text-center">Zoom Webinar ID: 825 9434 6147</p>
+                      <p class="text-center">
+                        <a href="https://us02web.zoom.us/webinar/register/7317150624286/WN_A-eJGfarTCqjiEInwROqog#/registration">
+                          <strong>REGISTER HERE</strong>
+                        </a>
+                      </p>
+                      <p class="text-center pt-3">
+                        <img src="img/summercamp-webinar-poster.jpg" class="img-fluid align-items-center" style="max-width:600px" />
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="TechPioneersModal" tabindex="-1" aria-labelledby="TechPioneersModalLabel" aria-hidden="true" data-bs-theme="dark">
+                <div class="modal-dialog odal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="TechPioneersModalLabel">Tech Pioneers</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                      <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/DXM3qaM8_C4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="PsychologyModal" tabindex="-1" aria-labelledby="PsychologyModalLabel" aria-hidden="true" data-bs-theme="dark">
+                <div class="modal-dialog odal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="PsychologyModalLabel">Master the Power of Media</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                      <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/HcqUrewFTl8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="PremedModal" tabindex="-1" aria-labelledby="PremedModalLabel" aria-hidden="true" data-bs-theme="dark">
+                <div class="modal-dialog odal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="PremedModalLabel">Life-Lab</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                      <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/mM22p5VGMxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="LeadershipModal" tabindex="-1" aria-labelledby="LeadershipModalLabel" aria-hidden="true" data-bs-theme="dark">
+                <div class="modal-dialog odal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="LeadershipModalLabel">Empowered Leadership</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                      <div class="ratio ratio-16x9">
+                        <iframe src="https://youtube.com/embed/JZsvEWr5cuk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Map Section End -->
+          </div>
+          <!-- Footer Section Start -->
+          <footer class="footer-area section-padding shadow-lg">
+            <div class="container">
+              <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-8 col-xl-4">
+                  <img src="img/AUD-logo-Get-Life-Ready.png" alt="AUD Logo" class="audlog">
+                  <p class="small mt-2 light mb-1">The American University in Dubai is a private, academically and culturally inclusive institution of higher learning, providing a globally recognized American education.</p>
+                  <p class="small light">To know more about American University in Dubai visit <a href="https://aud.edu">www.aud.edu</a>
+                  </p>
+                </div>
+                <div class="col-4 col-xl-2">
+                  <img src="img/AUDsummercamp-Logo.png" alt="summer camp logo" class="scLogo" />
+                  <ul>
+                    <li>
+                      <span style="color:#fff">Call:</span>
+                      <a href="tel:+97143183266">+971 4 3183266</a>
+                    </li>
+                    <li>
+                      <span style="color:#fff">WhatsApp:</span>
+                      <a href="https://wa.me/971503757055">+971 50 375 7055</a>
+                    </li>
+                    <li>
+                      <span style="color:#fff">Email:</span>
+                      <a href="mailto:summercamp@aud.edu">summercamp@aud.edu</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- Footer Section End -->
+        </main>
+      </div>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <asp:ContentPlaceHolder ID="reCaptchaScript" runat="server"></asp:ContentPlaceHolder>
+      <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+      <script src="Scripts/bootstrap.min.js"></script>
+      <script src="Scripts/popper.min.js"></script>
+      <script src="Scripts/jquery.countdown.min.js"></script>
+      <script src="Scripts/jquery.nav.js"></script>
+      <script src="Scripts/jquery.easing.min.js"></script>
+      <!-- <script src="Scripts/wow.js"></script> -->
+      <script src="Scripts/jquery.slicknav.js"></script>
+      <script src="Scripts/intlTelInput.min.js"></script>
+      <script src="Scripts/main.js?v=2"></script>
+      <script>
+        // document.querySelectorAll('.flip-card .flip-trigger').forEach(btn => {
+        //   btn.addEventListener('click', () => {
+        //     const card = btn.closest('.flip-card');
+        //     const back = card.querySelector('.flip-back');
+        //     const isOpen = card.classList.toggle('open');
+        //     back.hidden = !isOpen;
+        //     btn.setAttribute('aria-expanded', isOpen);
+        //   });
+        // });
+        document.querySelectorAll('.flip-card-wrapper').forEach(card => {
+          card.addEventListener('keydown', e => {
+            if (e.key === "Enter" || e.key === " ") {
+              card.querySelector('.flip-card-inner').classList.toggle('flipped');
+            }
+          });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+          const sidebar = document.getElementById('sidebarMenu');
+          const links = sidebar.querySelectorAll('a.leftside-nav-link');
+          links.forEach(link => {
+            link.addEventListener('click', function() {
+              // Check if sidebar is currently shown
+              if (sidebar.classList.contains('show')) {
+                // Bootstrap collapse method
+                const bsCollapse = bootstrap.Collapse.getInstance(sidebar);
+                if (bsCollapse) {
+                  bsCollapse.hide();
+                } else {
+                  // Initialize if not already
+                  new bootstrap.Collapse(sidebar).hide();
+                }
+              }
+            });
+          });
+        });
+      </script>
+      <script>
+        $(function() {
+          $("#txtDateofBirth").datepicker({
+            changeMonth: false,
+            changeYear: true,
+            dateFormat: "mm/dd/yy",
+            yearRange: "1990:2024"
+          });
+        });
+      </script>
+      <script>
+        $('a.summertrack').click(function(e) {
+          e.preventDefault();
+        });
+      </script>
+    </form>
+  </body>
+</html>
