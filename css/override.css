@@ -406,11 +406,6 @@ h3.card-title, h2.card-title {
     content: none;
   }
 }
-@media (min-width: 576px) {
-  .text-sm-justify {
-    text-align: justify !important;
-  }
-}
 @media screen and (max-width: 760px) {
   .card-body {
     display: flex;
@@ -454,11 +449,15 @@ h3.card-title, h2.card-title {
     width: 140px;
     max-width: 140px;
   }
+  .text-lg-center {
+    text-align: center !important;
+  }
   .sidebar {
     position: relative;
     left: 0;
     width: 100vw;
     height: fit-content;
+    top: unset;
   }
   .sidebar .nav-item:not(:last-child) {
     margin-right: 2rem;
@@ -471,8 +470,5 @@ h3.card-title, h2.card-title {
 @media screen and (max-width: 1081px) {
   #recap .recapposition {
     padding: 40px !important;
-  }
-  .sidebar {
-    top: 58px;
   }
 }
