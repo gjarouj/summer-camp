@@ -405,6 +405,9 @@ h3.card-title, h2.card-title {
   #typicalday .timeline > div::after, #typicalday .timeline > div::before {
     content: none;
   }
+  #main-slide .carousel-inner .carousel-item .carousel-caption {
+    position: absolute;
+  }
 }
 @media screen and (max-width: 760px) {
   .card-body {
@@ -438,10 +441,15 @@ h3.card-title, h2.card-title {
   }
   .sidebar {
     top: 58px;
-    height: calc(100vh - 58px);
+    height: 0;
     width: 100vw;
     padding: 10px 0 0;
     overflow-y: scroll;
+    transition: height 0.05s ease;
+  }
+  .sidebar.show {
+    height: calc(100vh - 58px);
+    transition: height opacity 0.05s ease;
   }
 }
 @media screen and (min-width: 992px) {
