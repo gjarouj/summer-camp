@@ -232,11 +232,14 @@ h3.card-title, h2.card-title {
 /* Typical day Section */
 /* ---------------------- */
 #typicalday h3 {
-  font-size: 20px;
+  font-size: 22px;
   color: var(--secondary-color-accessible);
 }
 #typicalday .icon i {
-  font-size: 30px;
+  font-size: 32px;
+}
+#typicalday .time {
+  font-size: 18px;
 }
 #typicalday .timeline > div {
   position: relative;
@@ -391,7 +394,6 @@ h3.card-title, h2.card-title {
   }
 }
 #main-slide .carousel-inner .carousel-item .carousel-caption .time-entry {
-  border: 4px solid var(--secondary-color);
   color: var(--primary-color);
 }
 #main-slide .carousel-inner .carousel-item .carousel-caption .time-entry span {

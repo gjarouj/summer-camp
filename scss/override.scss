@@ -224,12 +224,14 @@ h3.card-title, h2.card-title { font-size: 20px; }
 
 #typicalday {
     h3 {
-        font-size: 20px;
+        font-size: 22px;
         color: var(--secondary-color-accessible);
     }
     .icon i {
-        font-size: 30px;
+        font-size: 32px;
     }
+
+    .time { font-size: 18px; }
 
     .timeline > div {
         position: relative;
@@ -354,7 +356,7 @@ h3.card-title, h2.card-title { font-size: 20px; }
       }
 
       .time-entry {
-        border: 4px solid var(--secondary-color);
+        // border: 4px solid var(--secondary-color);
         color: var(--primary-color);
 
         span { color: var(--primary-color); }
