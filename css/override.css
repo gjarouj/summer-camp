@@ -23,6 +23,10 @@ body, p, h1, h2, h3, h4 {
   font-weight: 500 !important;
 }
 
+p {
+  font-size: 1.2rem;
+}
+
 /* Utility text colors */
 .text-orange {
   color: var(--secondary-color-accessible);
@@ -70,6 +74,9 @@ body, p, h1, h2, h3, h4 {
   width: 100%;
   transform-style: preserve-3d;
   transition: transform 0.6s ease;
+}
+.flip-card-inner .card-title {
+  color: var(--secondary-color-accessible);
 }
 
 .flip-card-front,
@@ -123,7 +130,7 @@ body, p, h1, h2, h3, h4 {
 /* Typography */
 /* ---------------------- */
 h3.card-title, h2.card-title {
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 /* ---------------------- */
@@ -221,6 +228,9 @@ h3.card-title, h2.card-title {
 #about .about-item p {
   color: white;
 }
+#about .about-item .about-content h3 {
+  font-size: 1.6rem;
+}
 @media screen and (max-width: 768px) {
   #about .about-item .icon i {
     height: 20px;
@@ -232,14 +242,14 @@ h3.card-title, h2.card-title {
 /* Typical day Section */
 /* ---------------------- */
 #typicalday h3 {
-  font-size: 22px;
+  font-size: 1.4rem;
   color: var(--secondary-color-accessible);
 }
 #typicalday .icon i {
   font-size: 32px;
 }
 #typicalday .time {
-  font-size: 18px;
+  font-size: 1.3rem;
 }
 #typicalday .timeline > div {
   position: relative;
@@ -344,6 +354,18 @@ h3.card-title, h2.card-title {
 /* ---------------------- */
 /* Carousel Main Slide */
 /* ---------------------- */
+#carouselTestimonial .carousel-item {
+  height: 100%;
+}
+#carouselTestimonial .carousel-item .testimony {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #main-slide .carousel-inner {
   max-height: calc(100vh - 107px);
   height: 100vh;
@@ -452,6 +474,14 @@ h3.card-title, h2.card-title {
   .sidebar.show {
     height: calc(100vh - 58px);
     transition: height opacity 0.05s ease;
+  }
+}
+@media screen and (min-width: 760px) {
+  #intro, #tracks {
+    min-height: calc(100vh - 100px);
+  }
+  #typicalday {
+    min-height: calc(100vh - 200px);
   }
 }
 @media screen and (min-width: 992px) {
