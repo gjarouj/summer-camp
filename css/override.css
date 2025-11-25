@@ -432,16 +432,16 @@ h3.card-title, h2.card-title {
   #main-slide .carousel-inner .carousel-item .carousel-caption {
     position: absolute;
   }
+  .track-section .card {
+    min-height: 320px;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 760px) {
   .card-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-  }
-  .card-body .card-text {
-    text-align: center;
   }
 }
 @media screen and (max-width: 1440px) {

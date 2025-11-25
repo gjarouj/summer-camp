@@ -391,6 +391,11 @@ h3.card-title, h2.card-title { font-size: 1.5rem; }
 @media screen and (max-width: 576px) {
     #typicalday .timeline > div::after, #typicalday .timeline > div::before { content: none }
     #main-slide .carousel-inner .carousel-item .carousel-caption { position: absolute; }
+    .track-section .card { 
+      min-height: 320px;
+      justify-content: center;
+    }
+    
 }
 
 @media screen and (max-width: 760px) {
@@ -398,9 +403,6 @@ h3.card-title, h2.card-title { font-size: 1.5rem; }
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-
-    .card-text { text-align: center; }
   }
 }
 
