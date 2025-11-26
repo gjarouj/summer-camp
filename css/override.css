@@ -221,7 +221,13 @@ h3.card-title, h2.card-title {
 /* About Section */
 /* ---------------------- */
 #about .about-middle {
-  min-height: calc(100vh - 107px);
+  min-height: unset;
+  background-image: unset;
+  padding: 0;
+}
+#about .about-middle img {
+  width: 100%;
+  height: 100%;
 }
 #about .about-item {
   box-shadow: unset;
